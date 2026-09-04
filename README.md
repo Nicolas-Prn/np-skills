@@ -17,8 +17,22 @@ As a Claude Code plugin, from any machine:
 /plugin install np-skills
 ```
 
+## Global instructions (CLAUDE.md)
+
+[`CLAUDE.md`](./CLAUDE.md) at the repo root holds standing personal preferences that should apply automatically in every project, on every machine — e.g. always write code in English, keep inline comments minimal and put substance in docs. This is the single source of truth; `~/.claude/CLAUDE.md` on each machine is a symlink to it, not a separate copy.
+
+Setup on a (new) machine:
+
+```bash
+git clone git@github.com:Nicolas-Prn/np-skills.git ~/Documents/np-skills
+ln -sf ~/Documents/np-skills/CLAUDE.md ~/.claude/CLAUDE.md
+```
+
+To change a global preference: edit `CLAUDE.md` in this repo and commit/push — every machine picks it up on the next `git pull` since `~/.claude/CLAUDE.md` just points at this file.
+
 ## Structure
 
+- `CLAUDE.md` — global personal preferences, symlinked into `~/.claude/CLAUDE.md` on every machine (see above)
 - `skills/engineering/` — TDD, code review, diagnosing bugs, domain modeling, codebase design, spec/ticket flows, and more
 - `skills/productivity/` — grilling, handoff, teaching, writing for agents, and more
 - `skills/personal/` — skills that are fully mine from the start (not derived from Pocock's set), e.g. commit/branch naming conventions
