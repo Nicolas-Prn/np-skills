@@ -1,0 +1,23 @@
+{
+  "name": "np-skills",
+  "owner": {
+    "name": "Nicolas",
+    "email": "prunnico@gmail.com"
+  },
+  "description": "Nicolas's personal Claude Code skills, started as a fork of Matt Pocock's engineering skills and evolving into a fully personal set.",
+  "plugins": [
+    {
+      "name": "np-skills",
+      "source": "./",
+      "description": "Personal Claude Code skills for real engineering — grilling, spec/ticket flows, TDD, code review, domain modelling and more, adapted with personal conventions and diverging from the original over time.",
+      "category": "engineering",
+      "keywords": [
+        "engineering",
+        "skills",
+        "tdd",
+        "code-review",
+        "grilling"
+      ]
+    }
+  ]
+}
