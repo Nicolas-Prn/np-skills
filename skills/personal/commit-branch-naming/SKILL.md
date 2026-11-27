@@ -1,6 +1,6 @@
 ---
 name: commit-branch-naming
-description: "Use whenever writing a git commit message or naming a new git branch, in any project. Enforces Conventional Commits format (<type>(<scope>): <description>) for commit subjects, and a ticket-linked branch naming scheme (<prefix>/US-<id>-<desc> or TK-<id>-<desc>). Trigger before running `git commit` or creating a branch (`git branch`/`git checkout -b`/`git switch -c`) - check this skill first rather than writing an ad hoc message or name."
+description: "Use whenever writing a git commit message or naming a new git branch, in any project. Enforces Conventional Commits format (TYPE(SCOPE): DESCRIPTION) for commit subjects, and a ticket-linked branch naming scheme (PREFIX/US-ID-DESC or PREFIX/TK-ID-DESC). Trigger before running `git commit` or creating a branch (`git branch`/`git checkout -b`/`git switch -c`) - check this skill first rather than writing an ad hoc message or name."
 ---
 
 # Commit & branch naming standard
